@@ -35,20 +35,21 @@
       .selected-language { cursor: pointer; font-size: 0.9rem; display: flex; align-items: center;}
       .selected-language i { margin-left: 5px; transition: transform 0.3s; }
       .language-selector:hover .selected-language i { transform: rotate(180deg);}
+      .high-contrast { color: #162C55; } /* contraste 7.23 */
     </style>
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="navbar fixed w-full z-50 py-3 px-4 sm:px-6 md:px-12 flex justify-between items-center text-white">
       <div class="flex items-center">
-        <a href="../../index-pt.html" class="flex items-center">
+        <a href="../../index.html" class="flex items-center">
           <span class="text-[#164559]">
             <img src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" id="logo-menu" class="logotipo" />
           </span>
           <div class="flex flex-col items-start ml-3">
             <span class="nome-emp">Roteiros&Dicas</span>
             <div class="divider-horizontal"></div>
-            <span class="tours"><b>Sobre Nós</b></span>
+            <span class="tours"><b>Tours</b></span>
           </div>
         </a>
       </div>
@@ -84,7 +85,7 @@
             <div class="flex flex-col items-start ml-3">
               <span class="text-[#164559]">Roteiros&Dicas</span>
               <div class="w-full h-[2px] bg-[#164559] my-1 opacity-70"></div>
-              <span class="tours text-[#164559]"><b>Sobre Nós</b></span>
+              <span class="tours text-[#164559]">Sobre Nós</span>
             </div>
           </div>
           <nav class="space-y-4">
@@ -119,10 +120,10 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-left">
-            <h3 class="text-xl font-bold mb-6 league-spartan">
+            <h3 class="text-xl font-bold mb-6 league-spartan high-contrast">
               Quem Somos
             </h3>
-            <div class="space-y-6">
+            <div class="space-y-6 text-gray-700">
               <p>
                 Fundada por apaixonados por Portugal, a Roteiros&Dicas nasceu do desejo de mostrar o melhor do nosso país a quem nos visita. A nossa equipa é composta por guias locais, conhecedores das tradições, histórias e segredos de cada região.
               </p>
@@ -135,7 +136,7 @@
             </div>
           </div>
           <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-left">
-            <h3 class="text-xl font-bold mb-6 league-spartan">
+            <h3 class="text-xl font-bold mb-6 league-spartan high-contrast">
               Missão, Visão e Valores
             </h3>
             <ul class="list-disc pl-5 space-y-4 text-gray-700">
