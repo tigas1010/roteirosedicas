@@ -10,7 +10,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-      /* ... mantém o CSS original igual ... */
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&family=League+Spartan:wght@400;700&display=swap");
       body { font-family: "Roboto", sans-serif; overflow-x: hidden; line-height: 1.6; }
       .playfair { font-family: "Playfair Display", serif; }
@@ -40,10 +39,73 @@
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
-    <!-- (Mantém igual ao original, apenas troca os textos do menu se necessário) -->
-
-    <!-- ... NAVBAR E MENU MOBILE igual ao original ... -->
-
+    <nav class="navbar fixed w-full z-50 py-3 px-4 sm:px-6 md:px-12 flex justify-between items-center text-white">
+      <div class="flex items-center">
+        <a href="../../index-pt.html" class="flex items-center">
+          <span class="text-[#164559]">
+            <img src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" id="logo-menu" class="logotipo" />
+          </span>
+          <div class="flex flex-col items-start ml-3">
+            <span class="nome-emp">Roteiros&Dicas</span>
+            <div class="divider-horizontal"></div>
+            <span class="tours"><b>Sobre Nós</b></span>
+          </div>
+        </a>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="../../index-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Início</a>
+        <a href="../tours/tours-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Tours</a>
+        <a href="../galery/galery-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Galeria</a>
+        <a href="../sobre-nos/aboutus-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Sobre Nós</a>
+        <a href="#" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Contacto</a>
+      </div>
+      <div class="hidden md:flex items-center">
+        <div class="language-selector mr-6">
+          <div class="selected-language text-[#164559] text-scroll-white">
+            <span>PT</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="language-dropdown">
+            <a href="aboutus-en.html" data-lang="en">English (EN)</a>
+            <a href="aboutus-fr.html" data-lang="fr">Français (FR)</a>
+          </div>
+        </div>
+        <a href="../tours/tours-pt.html" class="px-6 py-2 btn-primary rounded-full bg-[B1D4E0] font-medium text-[#164559] hover:bg-[#9bc4d4] hover:text-[#164559] transition">Reservar</a>
+      </div>
+      <button class="md:hidden text-[#164559] text-2xl p-2" id="mobile-menu-button"><i class="fas fa-bars"></i></button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
+      <div class="flex flex-col h-full px-6 py-8">
+        <button class="absolute top-6 right-6 text-gray-700 text-2xl" id="close-menu"><i class="fas fa-times"></i></button>
+        <div class="mb-10">
+          <div class="flex items-center mb-8">
+            <img src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" class="w-12 h-auto" />
+            <div class="flex flex-col items-start ml-3">
+              <span class="text-[#164559]">Roteiros&Dicas</span>
+              <div class="w-full h-[2px] bg-[#164559] my-1 opacity-70"></div>
+              <span class="tours text-[#164559]"><b>Sobre Nós</b></span>
+            </div>
+          </div>
+          <nav class="space-y-4">
+            <a href="../../index-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Início</a>
+            <a href="../tours/tours-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Tours</a>
+            <a href="../galery/galery-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Galeria</a>
+            <a href="../sobre-nos/aboutus-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Sobre Nós</a>
+            <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Contacto</a>
+          </nav>
+        </div>
+        <div class="mt-auto">
+          <div class="flex space-x-2 mb-6 justify-center">
+            <a href="#" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="pt">PT</a>
+            <a href="aboutus-en.html" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="en">EN</a>
+            <a href="aboutus-fr.html" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="fr">FR</a>
+          </div>
+          <a href="../tours/tours-pt.html" class="block w-full px-6 py-3 bg-[#164559] text-white rounded-full font-medium text-center hover:bg-[#1e546f] transition">Reservar</a>
+        </div>
+      </div>
+    </div>
+    <div class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden" id="menu-backdrop"></div>
     <!-- Sobre Nós Section -->
     <section id="about" class="pt-32 pb-20 bg-white">
       <div class="container mx-auto px-6 md:px-12">
@@ -88,14 +150,69 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
-    <!-- (Mantém igual ao original, apenas troca os textos se necessário) -->
-
-    <!-- ... FOOTER igual ao original ... -->
-
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-xl font-bold playfair mb-4">
+              <div class="flex items-center">
+                <span class="text-[#164559]">
+                  <img src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" id="logo-menu" class="logotipo" />
+                </span>
+                <div class="flex flex-col items-start ml-3">
+                  <span class="nome-emp text-white">Roteiros&Dicas</span>
+                  <div class="divider-horizontal bg-white"></div>
+                  <span class="tours text-white">Sobre Nós</span>
+                </div>
+              </div>
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Tours privados e personalizados em Portugal com guia especializado.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4 playfair">Links Rápidos</h4>
+            <ul class="space-y-2">
+              <li><a href="../../index-pt.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+              <li><a href="../tours/tours-pt.html" class="text-gray-400 hover:text-white transition">Tours</a></li>
+              <li><a href="../galery/galery-pt.html" class="text-gray-400 hover:text-white transition">Galeria</a></li>
+              <li><a href="../sobre-nos/aboutus-pt.html" class="text-gray-400 hover:text-white transition">Sobre Nós</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4 playfair">Tours</h4>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Douro</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Guimarães e Braga</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Fátima e Aveiro</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Porto</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Tour Personalizado</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4 playfair">Contacto</h4>
+            <ul class="space-y-4">
+              <li class="flex items-center"><i class="fas fa-phone text-[#B1D4E0] mr-3"></i><a href="https://wa.me/351913885853" target="_blank" class="text-gray-400 hover:text-white transition">+351 913 885 853</a></li>
+              <li class="flex items-center"><i class="fas fa-envelope text-[#B1D4E0] mr-3"></i><a href="mailto:roteirosedicas.tours@gmail.com" class="text-gray-400 hover:text-white transition">roteirosedicas.tours@gmail.com</a></li>
+            </ul>
+            <div class="mt-4 text-gray-500 text-sm">
+              <p>RENAAT Nº337 / 2025</p>
+              <p>Sede: Vila Nova de Gaia</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+          <p>&copy; 2023 Roteiros&Dicas. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
     <script>
-      // JS original mantido
       const mobileMenuButton = document.getElementById("mobile-menu-button");
       const mobileMenu = document.getElementById("mobile-menu");
       const closeMenuButton = document.getElementById("close-menu");
