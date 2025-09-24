@@ -2,188 +2,48 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="MobileOptimized" content="width" />
     <title>Roteiros&Dicas | Contacts</title>
+    <meta name="description" content="Contactez Roteiros&Dicas. Utilisez le formulaire ou nos informations directes pour des questions ou réserver votre circuit au Portugal." />
     <link rel="icon" href="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-      /* Font imports */
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&family=League+Spartan:wght@400;700&display=swap");
-
-      /* Base styles */
-      body {
-        font-family: "Roboto", sans-serif;
-        overflow-x: hidden;
-        line-height: 1.6;
-      }
-
-      .playfair {
-        font-family: "Playfair Display", serif;
-      }
-
-      .league-spartan {
-        font-family: "League Spartan", sans-serif;
-      }
-
-      /* Logo styles */
-      .logotipo {
-        width: 65px;
-        height: auto;
-      }
-
-      .nome-emp {
-        font-size: 1rem;
-        font-weight: 800;
-        color: #164559;
-        font-family: "League Spartan", sans-serif;
-        line-height: 1;
-      }
-
-      .tours {
-        font-size: 0.8rem;
-        color: #164559;
-        font-family: "League Spartan", sans-serif;
-        line-height: 1;
-        margin-left: 40px;
-      }
-
-      .divider-horizontal {
-        width: 105px;
-        height: 2px;
-        background-color: #164559;
-        opacity: 0.7;
-        margin: 4px 0;
-      }
-
-      /* Navigation */
-      .navbar {
-        transition: all 0.3s ease;
-        z-index: 40;
-        background-color: white;
-      }
-
-      #mobile-menu {
-        z-index: 50;
-      }
-
-      #close-menu {
-        z-index: 51;
-      }
-
-      .navbar.scrolled {
-        background: rgba(0, 0, 0, 0.85);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-      }
-
-      .navbar.scrolled .text-scroll-white,
-      .navbar.scrolled .nome-emp,
-      .navbar.scrolled .tours {
-        color: white !important;
-      }
-
-      .navbar.scrolled .text-scroll-white:hover {
-        color: #9bc4d4 !important;
-      }
-      .navbar.scrolled a:hover {
-        color: #9bc4d4 !important;
-      }
-
-      .navbar.scrolled .divider-horizontal {
-        background-color: white !important;
-      }
-
-      /* Buttons */
-      .btn-primary {
-        transition: all 0.3s ease;
-        background: #b1d4e0;
-        border-radius: 9999px;
-        color: #164559;
-        font-weight: 500;
-      }
-
-      .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 7px 15px rgba(22, 69, 89, 0.3);
-        background: #9bc4d4;
-      }
-
-      /* Language selector */
-      .language-selector {
-        position: relative;
-        display: inline-block;
-        margin-left: 20px;
-      }
-
-      .language-dropdown {
-        display: none;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.95);
-        backdrop-filter: blur(5px);
-        min-width: 100px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        z-index: 1;
-        border-radius: 4px;
-        overflow: hidden;
-      }
-
-      .language-dropdown a {
-        color: white;
-        padding: 8px 12px;
-        text-decoration: none;
-        display: block;
-        font-size: 0.85rem;
-        transition: background-color 0.3s;
-      }
-
-      .language-dropdown a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-
-      .language-selector:hover .language-dropdown {
-        display: block;
-      }
-
-      .selected-language {
-        cursor: pointer;
-        font-size: 0.9rem;
-        display: flex;
-        align-items: center;
-      }
-
-      .selected-language i {
-        margin-left: 5px;
-        transition: transform 0.3s;
-      }
-
-      .language-selector:hover .selected-language i {
-        transform: rotate(180deg);
-      }
+      body { font-family: "Roboto", sans-serif; overflow-x: hidden; line-height: 1.6; }
+      .playfair { font-family: "Playfair Display", serif; }
+      .league-spartan { font-family: "League Spartan", sans-serif; }
+      .logotipo { width: 65px; height: auto; }
+      .nome-emp { font-size: 1rem; font-weight: 800; color: #164559; font-family: "League Spartan", sans-serif; line-height: 1; }
+      .tours { font-size: 0.8rem; color: #164559; font-family: "League Spartan", sans-serif; line-height: 1; margin-left: 40px; }
+      .divider-horizontal { width: 105px; height: 2px; background-color: #164559; opacity: 0.7; margin: 4px 0; }
+      .navbar { transition: all 0.3s ease; z-index: 40; background-color: white; }
+      #mobile-menu { z-index: 50; }
+      #close-menu { z-index: 51; }
+      .navbar.scrolled { background: rgba(0, 0, 0, 0.85); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+      .navbar.scrolled .text-scroll-white, .navbar.scrolled .nome-emp, .navbar.scrolled .tours { color: white !important; }
+      .navbar.scrolled .text-scroll-white:hover, .navbar.scrolled a:hover { color: #9bc4d4 !important; }
+      .navbar.scrolled .divider-horizontal { background-color: white !important; }
+      .btn-primary { transition: all 0.3s ease; background: #b1d4e0; border-radius: 9999px; color: #164559; font-weight: 500; }
+      .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 7px 15px rgba(22, 69, 89, 0.3); background: #9bc4d4; }
+      .language-selector { position: relative; display: inline-block; margin-left: 20px; }
+      .language-dropdown { display: none; position: absolute; background-color: rgba(0, 0, 0, 0.95); backdrop-filter: blur(5px); min-width: 100px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); z-index: 1; border-radius: 4px; overflow: hidden; }
+      .language-dropdown a { color: white; padding: 8px 12px; text-decoration: none; display: block; font-size: 0.85rem; transition: background-color 0.3s;}
+      .language-dropdown a:hover { background-color: rgba(255, 255, 255, 0.1);}
+      .language-selector:hover .language-dropdown { display: block; }
+      .selected-language { cursor: pointer; font-size: 0.9rem; display: flex; align-items: center;}
+      .selected-language i { margin-left: 5px; transition: transform 0.3s; }
+      .language-selector:hover .selected-language i { transform: rotate(180deg);}
     </style>
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav
-      class="navbar fixed w-full z-50 py-3 px-4 sm:px-6 md:px-12 flex justify-between items-center text-white"
-    >
+    <nav class="navbar fixed w-full z-50 py-3 px-4 sm:px-6 md:px-12 flex justify-between items-center text-white">
       <div class="flex items-center">
-        <a href="../../index-fr.html" class="flex items-center">
+        <a href="../../index.html" class="flex items-center">
           <span class="text-[#164559]">
-            <img
-              src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png"
-              alt="logo"
-              id="logo-menu"
-              class="logotipo"
-            />
+            <img src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" id="logo-menu" class="logotipo" />
           </span>
           <div class="flex flex-col items-start ml-3">
             <span class="nome-emp">Roteiros&Dicas</span>
@@ -192,35 +52,13 @@
           </div>
         </a>
       </div>
-
       <div class="hidden md:flex space-x-8">
-        <a
-          href="../../index-fr.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Accueil</a
-        >
-        <a
-          href="../tours/tours-fr.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Visites</a
-        >
-        <a
-          href="../galery/galery-fr.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Galerie</a
-        >
-        <a
-          href="../sobre-nos/aboutus-fr.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >À propos</a
-        >
-        <a
-          href="#"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Contact</a
-        >
+        <a href="../../index-fr.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Accueil</a>
+        <a href="../tours/tours-fr.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Visites</a>
+        <a href="../galery/galery-fr.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Galerie</a>
+        <a href="../sobre-nos/aboutus-fr.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">À propos</a>
+        <a href="../contactos/contact-fr.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Contacts</a>
       </div>
-
       <div class="hidden md:flex items-center">
         <div class="language-selector mr-6">
           <div class="selected-language text-[#164559] text-scroll-white">
@@ -228,203 +66,97 @@
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="language-dropdown">
-            <a href="../contactos/contact-en.html" data-lang="en">English (EN)</a>
-            <a href="../contactos/contact-pt.html" data-lang="pt">Portugues (PT)</a>
+            <a href="contact-en.html" data-lang="en">English (EN)</a>
+            <a href="contact-pt.html" data-lang="pt">Português (PT)</a>
           </div>
         </div>
-        <a
-          href="../tours/tours-fr.html"
-          class="px-6 py-2 btn-primary rounded-full bg-[B1D4E0] font-medium text-[#164559] hover:bg-[#9bc4d4] hover:text-[#164559] transition"
-          >Réserver</a
-        >
+        <a href="../tours/tours-fr.html" class="px-6 py-2 btn-primary rounded-full font-medium text-[#164559]">Réserver</a>
       </div>
-
-      <button
-        class="md:hidden text-[#164559] text-2xl p-2"
-        id="mobile-menu-button"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
+      <button class="md:hidden text-[#164559] text-2xl p-2" id="mobile-menu-button"><i class="fas fa-bars"></i></button>
     </nav>
-
     <!-- Mobile Menu -->
-    <div
-      class="fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out"
-      id="mobile-menu"
-    >
+    <div class="fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
       <div class="flex flex-col h-full px-6 py-8">
-        <button
-          class="absolute top-6 right-6 text-gray-700 text-2xl"
-          id="close-menu"
-        >
-          <i class="fas fa-times"></i>
-        </button>
-
+        <button class="absolute top-6 right-6 text-gray-700 text-2xl" id="close-menu"><i class="fas fa-times"></i></button>
         <div class="mb-10">
           <div class="flex items-center mb-8">
-            <img
-              src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png"
-              alt="logo"
-              class="w-12 h-auto"
-            />
+            <img src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" class="w-12 h-auto" />
             <div class="flex flex-col items-start ml-3">
               <span class="text-[#164559]">Roteiros&Dicas</span>
               <div class="w-full h-[2px] bg-[#164559] my-1 opacity-70"></div>
-              <span class="tours text-[#164559]"><b>Tours</b></span>
+              <span class="tours text-[#164559]">Contacts</span>
             </div>
           </div>
-
           <nav class="space-y-4">
-            <a
-              href="../../index-fr.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Accueil</a
-            >
-            <a
-              href="../tours/tours-fr.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Visites</a
-            >
-            <a
-              href="../galery/galery-fr.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Galerie</a
-            >
-            <a
-              href="../sobre-nos/aboutus-fr.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >À propos</a
-            >
-            <a
-              href="#"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Contacts</a
-            >
+            <a href="../../index-fr.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Accueil</a>
+            <a href="../tours/tours-fr.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Visites</a>
+            <a href="../galery/galery-fr.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Galerie</a>
+            <a href="../sobre-nos/aboutus-fr.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">À propos</a>
+            <a href="../contactos/contact-fr.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Contacts</a>
           </nav>
         </div>
-
         <div class="mt-auto">
           <div class="flex space-x-2 mb-6 justify-center">
-            <a
-              href="../contactos/contact-pt.html"
-              class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm"
-              data-lang="pt"
-              >PT</a
-            >
-            <a
-              href="../contactos/contact-en.html"
-              class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm"
-              data-lang="en"
-              >EN</a
-            >
-            <a
-              href="#"
-              class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm"
-              data-lang="fr"
-              >FR</a
-            >
+            <a href="contact-pt.html" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="pt">PT</a>
+            <a href="contact-en.html" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="en">EN</a>
+            <a href="#" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="fr">FR</a>
           </div>
-          <a
-            href="../tours/tours-fr.html"
-            class="px-6 py-2 btn-primary rounded-full font-medium text-[#164559]"
-            >Réserver</a
-          >
+          <a href="../tours/tours-fr.html" class="block w-full px-6 py-3 bg-[#164559] text-white rounded-full font-medium text-center hover:bg-[#1e546f] transition">Réserver</a>
         </div>
       </div>
     </div>
-
-    <!-- Menu Backdrop -->
-    <div
-      class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden"
-      id="menu-backdrop"
-    ></div>
-
+    <div class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden" id="menu-backdrop"></div>
     <!-- Contact Section -->
     <section id="contact" class="pt-32 pb-20 bg-white">
       <div class="container mx-auto px-6 md:px-12">
         <div class="text-center mb-16">
-          <h2
-            class="text-3xl md:text-4xl lg:text-5xl font-bold league-spartan mb-6"
-          >
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold league-spartan mb-6">
             <span class="text-[#164559]">Contactez</span>-nous
           </h2>
           <p class="text-gray-600 max-w-2xl mx-auto text-lg">
-            Remplissez le formulaire ou utilisez nos informations de contact direct
+            Remplissez le formulaire ou utilisez nos informations de contact direct.
           </p>
         </div>
-
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-          <!-- Contact Info -->
           <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
             <h3 class="text-xl font-bold mb-6 league-spartan">
-              Informations de Contact
+              Informations de contact
             </h3>
             <div class="space-y-6">
               <div class="flex items-start">
-                <div class="text-2xl text-[#164559] mr-4 mt-1">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
+                <div class="text-2xl text-[#164559] mr-4 mt-1"><i class="fas fa-map-marker-alt"></i></div>
                 <div>
                   <h4 class="font-bold text-lg mb-1">Adresse</h4>
                   <p class="text-gray-600">Vila Nova de Gaia, Portugal</p>
                 </div>
               </div>
-
               <div class="flex items-start">
-                <div class="text-2xl text-[#164559] mr-4 mt-1">
-                  <i class="fas fa-phone-alt"></i>
-                </div>
+                <div class="text-2xl text-[#164559] mr-4 mt-1"><i class="fas fa-phone-alt"></i></div>
                 <div>
                   <h4 class="font-bold text-lg mb-1">Téléphone/WhatsApp</h4>
-                  <a
-                    href="tel:+351913885853"
-                    class="text-gray-600 hover:text-[#164559]"
-                    >+351 913 885 853</a
-                  >
+                  <a href="tel:+351913885853" class="text-gray-600 hover:text-[#164559]">+351 913 885 853</a>
                 </div>
               </div>
-
               <div class="flex items-start">
-                <div class="text-2xl text-[#164559] mr-4 mt-1">
-                  <i class="fas fa-envelope"></i>
-                </div>
+                <div class="text-2xl text-[#164559] mr-4 mt-1"><i class="fas fa-envelope"></i></div>
                 <div>
                   <h4 class="font-bold text-lg mb-1">E-mail</h4>
-                  <a
-                    href="mailto:roteirosedicas.tours@gmail.com"
-                    class="text-gray-600 hover:text-[#164559]"
-                    >roteirosedicas.tours@gmail.com</a
-                  >
+                  <a href="mailto:roteirosedicas.tours@gmail.com" class="text-gray-600 hover:text-[#164559]">roteirosedicas.tours@gmail.com</a>
                 </div>
               </div>
-
               <div class="flex items-start">
-                <div class="text-2xl text-[#164559] mr-4 mt-1">
-                  <i class="fas fa-clock"></i>
-                </div>
+                <div class="text-2xl text-[#164559] mr-4 mt-1"><i class="fas fa-clock"></i></div>
                 <div>
-                  <h4 class="font-bold text-lg mb-1">Heures d'ouverture</h4>
-                  <p class="text-gray-600">Lundi à Vendredi: 9h00 - 18h00</p>
-                  <p class="text-gray-600">Samedi: 10h00 - 14h00</p>
+                  <h4 class="font-bold text-lg mb-1">Horaires d'ouverture</h4>
+                  <p class="text-gray-600">Lundi à vendredi : 9h00 - 18h00</p>
+                  <p class="text-gray-600">Samedi : 10h00 - 14h00</p>
                 </div>
               </div>
-
               <div class="pt-4">
                 <h3 class="font-bold text-lg mb-3 league-spartan">Réseaux sociaux</h3>
                 <div class="flex space-x-4">
-                  <a
-                    href="#"
-                    class="text-gray-700 hover:text-[#164559] text-2xl"
-                  >
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                  <a
-                    href="#"
-                    class="text-gray-700 hover:text-[#164559] text-2xl"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
+                  <a href="#" class="text-gray-700 hover:text-[#164559] text-2xl"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="text-gray-700 hover:text-[#164559] text-2xl"><i class="fab fa-instagram"></i></a>
                 </div>
               </div>
             </div>
@@ -432,23 +164,15 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-6 md:px-12">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           <div class="mb-8 md:mb-0">
             <h3 class="text-xl font-bold playfair mb-4">
               <div class="flex items-center">
                 <span class="text-[#164559]">
-                  <img
-                    src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png"
-                    alt="logo"
-                    id="logo-menu"
-                    class="logotipo"
-                  />
+                  <img src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" class="logotipo" />
                 </span>
                 <div class="flex flex-col items-start ml-3">
                   <span class="nome-emp text-white">Roteiros&Dicas</span>
@@ -458,242 +182,101 @@
               </div>
             </h3>
             <p class="text-gray-400 mb-4">
-              Visites privées et personnalisées au Portugal avec un guide spécialisé.
+              Visites privées et personnalisées au Portugal avec guide expert.
             </p>
             <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white transition">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-white transition">
-                <i class="fab fa-instagram"></i>
-              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-
           <div>
             <h4 class="text-lg font-bold mb-4 playfair">Liens rapides</h4>
             <ul class="space-y-2">
-              <li>
-                <a href="../../index-fr.html" class="text-gray-400 hover:text-white transition"
-                  >Accueil</a
-                >
-              </li>
-              <li>
-                <a href="../tours/tours-fr.html" class="text-gray-400 hover:text-white transition"
-                  >Visites</a
-                >
-              </li>
-              <li>
-                <a href="../galery/galery-fr.html" class="text-gray-400 hover:text-white transition"
-                  >Galerie</a
-                >
-              </li>
-              <li>
-                <a href="../sobre-nos/aboutus-fr.html" class="text-gray-400 hover:text-white transition"
-                  >À propos</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition"
-                  >Contact</a
-                >
-              </li>
+              <li><a href="../../index-fr.html" class="text-gray-400 hover:text-white transition">Accueil</a></li>
+              <li><a href="../tours/tours-fr.html" class="text-gray-400 hover:text-white transition">Visites</a></li>
+              <li><a href="../galery/galery-fr.html" class="text-gray-400 hover:text-white transition">Galerie</a></li>
+              <li><a href="../sobre-nos/aboutus-fr.html" class="text-gray-400 hover:text-white transition">À propos</a></li>
+              <li><a href="../contactos/contact-fr.html" class="text-gray-400 hover:text-white transition">Contacts</a></li>
             </ul>
           </div>
-
           <div>
             <h4 class="text-lg font-bold mb-4 playfair">Tours</h4>
             <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Douro Valley</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Guimarães e Braga</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Fátima e Aveiro</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Porto</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Circuit personnalisé</a
-                >
-              </li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Douro</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Guimarães & Braga</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Fátima & Aveiro</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Porto</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition">Tour Personnalisé</a></li>
             </ul>
           </div>
-
           <div>
-            <h4 class="text-lg font-bold mb-4 playfair">Contacts</h4>
+            <h4 class="text-lg font-bold mb-4 playfair">Contact</h4>
             <ul class="space-y-4">
-              <li class="flex items-center">
-                <i class="fas fa-phone text-[#B1D4E0] mr-3"></i>
-                <a
-                  href="https://wa.me/351913885853"
-                  target="_blank"
-                  class="text-gray-400 hover:text-white transition"
-                >
-                  +351 913 885 853
-                </a>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-envelope text-[#B1D4E0] mr-3"></i>
-                <a
-                  href="mailto:roteirosedicas.tours@gmail.com"
-                  class="text-gray-400 hover:text-white transition"
-                >
-                  roteirosedicas.tours@gmail.com
-                </a>
-              </li>
+              <li class="flex items-center"><i class="fas fa-phone text-[#B1D4E0] mr-3"></i><a href="https://wa.me/351913885853" target="_blank" class="text-gray-400 hover:text-white transition">+351 913 885 853</a></li>
+              <li class="flex items-center"><i class="fas fa-envelope text-[#B1D4E0] mr-3"></i><a href="mailto:roteirosedicas.tours@gmail.com" class="text-gray-400 hover:text-white transition">roteirosedicas.tours@gmail.com</a></li>
             </ul>
             <div class="mt-4 text-gray-500 text-sm">
               <p>RENAAT Nº337 / 2025</p>
-              <p>Siège social: Vila Nova de Gaia</p>
+              <p>Siège: Vila Nova de Gaia</p>
             </div>
           </div>
         </div>
-
-        <div
-          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500"
-        >
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
           <p>&copy; 2023 Roteiros&Dicas. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
-
     <script>
-      /**
-       * DOM Elements
-       */
       const mobileMenuButton = document.getElementById("mobile-menu-button");
       const mobileMenu = document.getElementById("mobile-menu");
       const closeMenuButton = document.getElementById("close-menu");
       const navbar = document.querySelector(".navbar");
-
-      /**
-       * Initialize all event listeners
-       */
       function initEventListeners() {
-        // Mobile menu toggle
         mobileMenuButton.addEventListener("click", toggleMobileMenu);
         closeMenuButton.addEventListener("click", closeMobileMenu);
-
-        // Navbar scroll effect
         window.addEventListener("scroll", handleNavbarScroll);
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener("click", handleSmoothScroll);
         });
       }
-
-      /**
-       * Toggle mobile menu visibility
-       */
       function toggleMobileMenu() {
         const menuBackdrop = document.getElementById("menu-backdrop");
         mobileMenu.classList.remove("translate-x-full");
         menuBackdrop.classList.remove("hidden");
         document.body.style.overflow = "hidden";
       }
-
-      /**
-       * Close mobile menu
-       */
       function closeMobileMenu() {
         const menuBackdrop = document.getElementById("menu-backdrop");
         mobileMenu.classList.add("translate-x-full");
         menuBackdrop.classList.add("hidden");
         document.body.style.overflow = "";
       }
-
-      // Close menu when clicking backdrop
-      document
-        .getElementById("menu-backdrop")
-        .addEventListener("click", closeMobileMenu);
-
-      /**
-       * Handle navbar scroll effect
-       */
+      document.getElementById("menu-backdrop").addEventListener("click", closeMobileMenu);
       function handleNavbarScroll() {
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
+        if (window.scrollY > 50) navbar.classList.add("scrolled");
+        else navbar.classList.remove("scrolled");
       }
-
-      /**
-       * Handle smooth scrolling for anchor links
-       * @param {Event} e - Click event
-       */
       function handleSmoothScroll(e) {
         e.preventDefault();
-
         const targetId = this.getAttribute("href");
         if (targetId === "#") return;
-
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: "smooth",
-          });
-
-          // Close mobile menu if open
-          if (!mobileMenu.classList.contains("hidden")) {
-            closeMobileMenu();
-          }
+          window.scrollTo({top: targetElement.offsetTop - 80, behavior: "smooth"});
+          if (!mobileMenu.classList.contains("hidden")) closeMobileMenu();
         }
       }
-
-      // Language switching functionality
-      document.querySelectorAll("[data-lang]").forEach((link) => {
+      document.querySelectorAll("[data-lang]").forEach(link => {
         link.addEventListener("click", function (e) {
           const lang = this.getAttribute("data-lang");
-
-          // Only prevent default for non-href links
-          if (this.getAttribute("href") === "#") {
-            e.preventDefault();
-          }
-
-          if (this.classList.contains("selected-language")) {
-            return; // Already selected
-          }
-
-          // Update selected language indicator
-          document.querySelectorAll(".selected-language span").forEach((el) => {
-            el.textContent = lang.toUpperCase();
-          });
-
-          // Get the page name (index)
-          const currentPage = window.location.pathname
-            .split("/")
-            .pop()
-            .replace(/\.html$/, "");
+          if (this.getAttribute("href") === "#") e.preventDefault();
+          if (this.classList.contains("selected-language")) return;
+          document.querySelectorAll(".selected-language span").forEach(el => {el.textContent = lang.toUpperCase();});
+          const currentPage = window.location.pathname.split("/").pop().replace(/\.html$/, "");
           const baseName = currentPage.split("-")[0];
-
-          // If it's a link without href (mobile menu), construct the URL
-          if (this.getAttribute("href") === "#") {
-            window.location.href = `${baseName}-${lang}.html`;
-          }
-
-          // Otherwise, the href attribute will handle the navigation
+          if (this.getAttribute("href") === "#") window.location.href = `${baseName}-${lang}.html`;
         });
       });
-
-      // Initialize all event listeners when DOM is loaded
       document.addEventListener("DOMContentLoaded", initEventListeners);
     </script>
   </body>

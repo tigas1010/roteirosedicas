@@ -2,188 +2,48 @@
 <html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="MobileOptimized" content="width" />
-    <title>Roteiros&Dicas | Tour pelo Vale do Douro</title>
+    <title>Roteiros&Dicas | Tour Porto</title>
+    <meta name="description" content="Descubra o Porto com guia especializado. Tour privado pelas principais atrações, caves de vinho do Porto, passeio de barco das 6 pontes e gastronomia local." />
     <link rel="icon" href="../../../images/Screenshot_2025-06-09_183744-removebg-preview.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-      /* Font imports */
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&family=League+Spartan:wght@400;700&display=swap");
-
-      /* Base styles */
-      body {
-        font-family: "Roboto", sans-serif;
-        overflow-x: hidden;
-        line-height: 1.6;
-      }
-
-      .playfair {
-        font-family: "Playfair Display", serif;
-      }
-
-      .league-spartan {
-        font-family: "League Spartan", sans-serif;
-      }
-
-      /* Logo styles */
-      .logotipo {
-        width: 65px;
-        height: auto;
-      }
-
-      .nome-emp {
-        font-size: 1rem;
-        font-weight: 800;
-        color: #164559;
-        font-family: "League Spartan", sans-serif;
-        line-height: 1;
-      }
-
-      .tours {
-        font-size: 0.8rem;
-        color: #164559;
-        font-family: "League Spartan", sans-serif;
-        line-height: 1;
-        margin-left: 40px;
-      }
-
-      .divider-horizontal {
-        width: 105px;
-        height: 2px;
-        background-color: #164559;
-        opacity: 0.7;
-        margin: 4px 0;
-      }
-
-      /* Navigation */
-      .navbar {
-        transition: all 0.3s ease;
-        z-index: 40;
-        background-color: white;
-      }
-
-      #mobile-menu {
-        z-index: 50;
-      }
-
-      #close-menu {
-        z-index: 51;
-      }
-
-      .navbar.scrolled {
-        background: rgba(0, 0, 0, 0.85);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-      }
-
-      .navbar.scrolled .text-scroll-white,
-      .navbar.scrolled .nome-emp,
-      .navbar.scrolled .tours {
-        color: white !important;
-      }
-
-      .navbar.scrolled .text-scroll-white:hover {
-        color: #9bc4d4 !important;
-      }
-      .navbar.scrolled a:hover {
-        color: #9bc4d4 !important;
-      }
-
-      .navbar.scrolled .divider-horizontal {
-        background-color: white !important;
-      }
-
-      /* Buttons */
-      .btn-primary {
-        transition: all 0.3s ease;
-        background: #b1d4e0;
-        border-radius: 9999px;
-        color: #164559;
-        font-weight: 500;
-      }
-
-      .btn-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 7px 15px rgba(22, 69, 89, 0.3);
-        background: #9bc4d4;
-      }
-
-      /* Language selector */
-      .language-selector {
-        position: relative;
-        display: inline-block;
-        margin-left: 20px;
-      }
-
-      .language-dropdown {
-        display: none;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.95);
-        backdrop-filter: blur(5px);
-        min-width: 100px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        z-index: 1;
-        border-radius: 4px;
-        overflow: hidden;
-      }
-
-      .language-dropdown a {
-        color: white;
-        padding: 8px 12px;
-        text-decoration: none;
-        display: block;
-        font-size: 0.85rem;
-        transition: background-color 0.3s;
-      }
-
-      .language-dropdown a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-
-      .language-selector:hover .language-dropdown {
-        display: block;
-      }
-
-      .selected-language {
-        cursor: pointer;
-        font-size: 0.9rem;
-        display: flex;
-        align-items: center;
-      }
-
-      .selected-language i {
-        margin-left: 5px;
-        transition: transform 0.3s;
-      }
-
-      .language-selector:hover .selected-language i {
-        transform: rotate(180deg);
-      }
+      body { font-family: "Roboto", sans-serif; overflow-x: hidden; line-height: 1.6; }
+      .playfair { font-family: "Playfair Display", serif; }
+      .league-spartan { font-family: "League Spartan", sans-serif; }
+      .logotipo { width: 65px; height: auto; }
+      .nome-emp { font-size: 1rem; font-weight: 800; color: #164559; font-family: "League Spartan", sans-serif; line-height: 1; }
+      .tours { font-size: 0.8rem; color: #164559; font-family: "League Spartan", sans-serif; line-height: 1; margin-left: 40px; }
+      .divider-horizontal { width: 105px; height: 2px; background-color: #164559; opacity: 0.7; margin: 4px 0; }
+      .navbar { transition: all 0.3s ease; z-index: 40; background-color: white; }
+      #mobile-menu { z-index: 50; }
+      #close-menu { z-index: 51; }
+      .navbar.scrolled { background: rgba(0, 0, 0, 0.85); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);}
+      .navbar.scrolled .text-scroll-white, .navbar.scrolled .nome-emp, .navbar.scrolled .tours { color: white !important;}
+      .navbar.scrolled .text-scroll-white:hover, .navbar.scrolled a:hover { color: #9bc4d4 !important;}
+      .navbar.scrolled .divider-horizontal { background-color: white !important;}
+      .btn-primary { transition: all 0.3s ease; background: #b1d4e0; border-radius: 9999px; color: #164559; font-weight: 500;}
+      .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 7px 15px rgba(22,69,89,0.3); background: #9bc4d4;}
+      .language-selector { position: relative; display: inline-block; margin-left: 20px;}
+      .language-dropdown { display: none; position: absolute; background-color: rgba(0,0,0,0.95); backdrop-filter: blur(5px); min-width: 100px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); z-index: 1; border-radius: 4px; overflow: hidden;}
+      .language-dropdown a { color: white; padding: 8px 12px; text-decoration: none; display: block; font-size: 0.85rem; transition: background-color 0.3s;}
+      .language-dropdown a:hover { background-color: rgba(255,255,255,0.1);}
+      .language-selector:hover .language-dropdown { display: block;}
+      .selected-language { cursor: pointer; font-size: 0.9rem; display: flex; align-items: center;}
+      .selected-language i { margin-left: 5px; transition: transform 0.3s;}
+      .language-selector:hover .selected-language i { transform: rotate(180deg);}
     </style>
   </head>
   <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav
-      class="navbar fixed w-full z-50 py-3 px-4 sm:px-6 md:px-12 flex justify-between items-center text-white"
-    >
+    <nav class="navbar fixed w-full z-50 py-3 px-4 sm:px-6 md:px-12 flex justify-between items-center text-white">
       <div class="flex items-center">
-        <a href="../../index-pt.html" class="flex items-center">
+        <a href="../../../index.html" class="flex items-center">
           <span class="text-[#164559]">
-            <img
-              src="../../../images/Screenshot_2025-06-09_183744-removebg-preview.png"
-              alt="logo"
-              id="logo-menu"
-              class="logotipo"
-            />
+            <img src="../../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" id="logo-menu" class="logotipo" />
           </span>
           <div class="flex flex-col items-start ml-3">
             <span class="nome-emp">Roteiros&Dicas</span>
@@ -192,363 +52,154 @@
           </div>
         </a>
       </div>
-
       <div class="hidden md:flex space-x-8">
-        <a
-          href="../../../index-pt.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Início</a
-        >
-        <a
-          href="../../tours/tours-pt.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Tours</a
-        >
-        <a
-          href="../../galery/galery-pt.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Galeria</a
-        >
-        <a
-          href="../../sobre-nos/aboutus-pt.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Sobre Nós</a
-        >
-        <a
-          href="../../contactos/contact-pt.html"
-          class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white"
-          >Contacto</a
-        >
+        <a href="../../../index-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Início</a>
+        <a href="../../tours/tours-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Tours</a>
+        <a href="../../galery/galery-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Galeria</a>
+        <a href="../../sobre-nos/aboutus-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Sobre Nós</a>
+        <a href="../../contactos/contact-pt.html" class="text-[#164559] hover:text-[#1e546f] transition text-scroll-white">Contacto</a>
       </div>
-
       <div class="hidden md:flex items-center">
         <div class="language-selector mr-6">
-          <div class="selected-language text-[#164559] text-scroll-white">
-            <span>PT</span>
-            <i class="fas fa-chevron-down"></i>
-          </div>
+          <div class="selected-language text-[#164559] text-scroll-white"><span>PT</span><i class="fas fa-chevron-down"></i></div>
           <div class="language-dropdown">
-            <a href="../contactos/contact-en.html" data-lang="en">English (EN)</a>
-            <a href="../contactos/contact-fr.html" data-lang="fr">Français (FR)</a>
+            <a href="../../../pages/detalhes/en/porto.html" data-lang="en">English (EN)</a>
+            <a href="../../../pages/detalhes/fr/porto.html" data-lang="fr">Français (FR)</a>
           </div>
         </div>
-        <a
-          href="../tours/tours-pt.html"
-          class="px-6 py-2 btn-primary rounded-full bg-[B1D4E0] font-medium text-[#164559] hover:bg-[#9bc4d4] hover:text-[#164559] transition"
-          >Reservar</a
-        >
+        <a href="../../tours/tours-pt.html" class="px-6 py-2 btn-primary rounded-full font-medium text-[#164559]">Reservar</a>
       </div>
-
-      <button
-        class="md:hidden text-[#164559] text-2xl p-2"
-        id="mobile-menu-button"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
+      <button class="md:hidden text-[#164559] text-2xl p-2" id="mobile-menu-button"><i class="fas fa-bars"></i></button>
     </nav>
 
     <!-- Mobile Menu -->
-    <div
-      class="fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out"
-      id="mobile-menu"
-    >
+    <div class="fixed top-0 right-0 h-full w-72 bg-white shadow-xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
       <div class="flex flex-col h-full px-6 py-8">
-        <button
-          class="absolute top-6 right-6 text-gray-700 text-2xl"
-          id="close-menu"
-        >
-          <i class="fas fa-times"></i>
-        </button>
-
+        <button class="absolute top-6 right-6 text-gray-700 text-2xl" id="close-menu"><i class="fas fa-times"></i></button>
         <div class="mb-10">
           <div class="flex items-center mb-8">
-            <img
-              src="../../../images/Screenshot_2025-06-09_183744-removebg-preview.png"
-              alt="logo"
-              class="w-12 h-auto"
-            />
+            <img src="../../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" class="w-12 h-auto" />
             <div class="flex flex-col items-start ml-3">
               <span class="text-[#164559]">Roteiros&Dicas</span>
               <div class="w-full h-[2px] bg-[#164559] my-1 opacity-70"></div>
-              <span class="tours text-[#164559]"><b>Tours</b></span>
+              <span class="tours text-[#164559]">Porto</span>
             </div>
           </div>
-
           <nav class="space-y-4">
-            <a
-              href="../../index-pt.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Início</a
-            >
-            <a
-              href="../tours/tours-pt.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Tours</a
-            >
-            <a
-              href="../galery/galery-pt.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Galeria</a
-            >
-            <a
-              href="../sobre-nos/aboutus-pt.html"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Sobre Nós</a
-            >
-            <a
-              href="#"
-              class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition"
-              >Contacto</a
-            >
+            <a href="../../../index-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Início</a>
+            <a href="../../tours/tours-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Tours</a>
+            <a href="../../galery/galery-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Galeria</a>
+            <a href="../../sobre-nos/aboutus-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Sobre Nós</a>
+            <a href="../../contactos/contact-pt.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition">Contacto</a>
           </nav>
         </div>
-
         <div class="mt-auto">
           <div class="flex space-x-2 mb-6 justify-center">
-            <a
-              href="#"
-              class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm"
-              data-lang="pt"
-              >PT</a
-            >
-            <a
-              href="../contactos/contact-en.html"
-              class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm"
-              data-lang="en"
-              >EN</a
-            >
-            <a
-              href="../contactos/contact-fr.html"
-              class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm"
-              data-lang="fr"
-              >FR</a
-            >
+            <a href="#" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="pt">PT</a>
+            <a href="../../../pages/detalhes/en/porto.html" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="en">EN</a>
+            <a href="../../../pages/detalhes/fr/porto.html" class="px-4 py-1 border border-[#164559] text-[#164559] rounded-full text-sm" data-lang="fr">FR</a>
           </div>
-          <a
-            href="../tours/tours-pt.html"
-            class="px-6 py-2 btn-primary rounded-full font-medium text-[#164559]"
-            >Reservar</a
-          >
+          <a href="../../tours/tours-pt.html" class="block w-full px-6 py-3 bg-[#164559] text-white rounded-full font-medium text-center hover:bg-[#1e546f] transition">Reservar</a>
         </div>
       </div>
     </div>
+    <div class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden" id="menu-backdrop"></div>
 
-    <!-- Menu Backdrop -->
-    <div
-      class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden"
-      id="menu-backdrop"
-    ></div>
-
-    <!-- Douro Tour Section -->
+    <!-- Porto Tour Section -->
     <section class="pt-32 pb-20 px-6 md:px-12 bg-white">
       <div class="container mx-auto">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-[#164559] playfair mb-4">
-            Tour pelo Vale do Douro
-          </h2>
+          <h2 class="text-4xl font-bold text-[#164559] playfair mb-4">Tour Privado pelo Porto</h2>
           <div class="w-24 h-1 bg-[#B1D4E0] mx-auto mb-6"></div>
           <p class="text-gray-700 max-w-3xl mx-auto">
-            Descubra a paisagem deslumbrante do primeiro região vinícola demarcada do mundo, classificada como Património Mundial pela UNESCO.
+            Conheça os encantos do Porto, cidade Invicta. Descubra monumentos históricos, a zona ribeirinha, as caves de vinho do Porto e prove a gastronomia local.
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <img 
-              src="../../../images/porto.jpg" 
-              alt="Vale do Douro" 
-              class="rounded-lg shadow-xl w-full h-auto"
-            >
+            <img src="../../../images/porto.jpg" alt="Porto" class="rounded-lg shadow-xl w-full h-auto">
           </div>
           <div>
-            <h3 class="text-2xl font-bold text-[#164559] playfair mb-4">
-              O Que Inclui Este Tour
-            </h3>
+            <h3 class="text-2xl font-bold text-[#164559] playfair mb-4">O que inclui este tour</h3>
             <ul class="space-y-4 text-gray-700">
-              <li class="flex items-start">
-                <i class="fas fa-wine-glass-alt text-[#B1D4E0] mt-1 mr-3"></i>
-                <span>Visita a 2 quintas tradicionais com provas de vinho do Porto e vinhos regionais</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-ship text-[#B1D4E0] mt-1 mr-3"></i>
-                <span>Passeio de barco tradicional rabelo pelo rio Douro</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-utensils text-[#B1D4E0] mt-1 mr-3"></i>
-                <span>Almoço típico com produtos regionais (incluído)</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-eye text-[#B1D4E0] mt-1 mr-3"></i>
-                <span>Paragem em miradouros com vistas deslumbrantes sobre o vale</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-history text-[#B1D4E0] mt-1 mr-3"></i>
-                <span>Explicações sobre a história e produção do Vinho do Porto</span>
-              </li>
+              <li class="flex items-start"><i class="fas fa-landmark text-[#B1D4E0] mt-1 mr-3"></i>Centro histórico: Sé, Clérigos, Livraria Lello, São Bento</li>
+              <li class="flex items-start"><i class="fas fa-wine-glass-alt text-[#B1D4E0] mt-1 mr-3"></i>Visita e prova em caves de vinho do Porto</li>
+              <li class="flex items-start"><i class="fas fa-ship text-[#B1D4E0] mt-1 mr-3"></i>Passeio de barco das 6 pontes</li>
+              <li class="flex items-start"><i class="fas fa-utensils text-[#B1D4E0] mt-1 mr-3"></i>Almoço típico portuense (incluído)</li>
+              <li class="flex items-start"><i class="fas fa-eye text-[#B1D4E0] mt-1 mr-3"></i>Miradouros e vistas panorâmicas</li>
             </ul>
-
             <div class="mt-8">
-              <a 
-                href="../tours/tours-pt.html" 
-                class="px-8 py-3 btn-primary rounded-full font-medium text-lg text-[#164559] hover:bg-[#9bc4d4] hover:text-[#164559] transition inline-block"
-              >
-                Reservar Agora
-              </a>
+              <a href="../../tours/tours-pt.html" class="px-8 py-3 btn-primary rounded-full font-medium text-lg text-[#164559] hover:bg-[#9bc4d4] hover:text-[#164559] transition inline-block">Reservar Agora</a>
             </div>
           </div>
         </div>
 
         <div class="mt-20">
-          <h3 class="text-2xl font-bold text-[#164559] playfair mb-6 text-center">
-            Itinerário Detalhado
-          </h3>
+          <h3 class="text-2xl font-bold text-[#164559] playfair mb-6 text-center">Itinerário Detalhado</h3>
           <div class="relative">
-            <!-- Timeline -->
             <div class="border-l-2 border-[#B1D4E0] pl-8 space-y-12">
               <div class="relative">
-                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center">
-                  <i class="fas fa-map-marker-alt text-white"></i>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h4 class="font-bold text-lg text-[#164559] mb-2">09:00 - Partida do Porto</h4>
-                  <p class="text-gray-700">Encontro com o guia no seu hotel/acomodação</p>
-                </div>
+                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center"><i class="fas fa-map-marker-alt text-white"></i></div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm"><h4 class="font-bold text-lg text-[#164559] mb-2">09:00 - Encontro</h4><p class="text-gray-700">Pick-up no hotel ou ponto combinado</p></div>
               </div>
-              
               <div class="relative">
-                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center">
-                  <i class="fas fa-wine-glass-alt text-white"></i>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h4 class="font-bold text-lg text-[#164559] mb-2">10:30 - Visita à 1ª Quinta</h4>
-                  <p class="text-gray-700">Tour pela vinha e adega com prova de 3 vinhos</p>
-                </div>
+                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center"><i class="fas fa-landmark text-white"></i></div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm"><h4 class="font-bold text-lg text-[#164559] mb-2">09:30 - Centro Histórico</h4><p class="text-gray-700">Sé, Clérigos, Livraria Lello, São Bento</p></div>
               </div>
-              
               <div class="relative">
-                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center">
-                  <i class="fas fa-utensils text-white"></i>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h4 class="font-bold text-lg text-[#164559] mb-2">12:30 - Almoço Regional</h4>
-                  <p class="text-gray-700">Refeição típica em restaurante local (incluída)</p>
-                </div>
+                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center"><i class="fas fa-wine-glass-alt text-white"></i></div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm"><h4 class="font-bold text-lg text-[#164559] mb-2">11:30 - Caves de Vinho do Porto</h4><p class="text-gray-700">Visita guiada e prova de vinhos</p></div>
               </div>
-              
               <div class="relative">
-                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center">
-                  <i class="fas fa-ship text-white"></i>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h4 class="font-bold text-lg text-[#164559] mb-2">14:30 - Passeio de Barco</h4>
-                  <p class="text-gray-700">1 hora de cruzeiro pelo rio Douro em barco rabelo tradicional</p>
-                </div>
+                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center"><i class="fas fa-utensils text-white"></i></div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm"><h4 class="font-bold text-lg text-[#164559] mb-2">13:00 - Almoço</h4><p class="text-gray-700">Cozinha portuense em restaurante local (incluído)</p></div>
               </div>
-              
               <div class="relative">
-                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center">
-                  <i class="fas fa-camera text-white"></i>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h4 class="font-bold text-lg text-[#164559] mb-2">15:30 - Paragem em Miradouros</h4>
-                  <p class="text-gray-700">Oportunidade para fotografar as paisagens mais espetaculares</p>
-                </div>
+                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center"><i class="fas fa-ship text-white"></i></div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm"><h4 class="font-bold text-lg text-[#164559] mb-2">15:00 - Barco das 6 Pontes</h4><p class="text-gray-700">Cruzeiro no Douro ao longo das pontes</p></div>
               </div>
-              
               <div class="relative">
-                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center">
-                  <i class="fas fa-flag text-white"></i>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h4 class="font-bold text-lg text-[#164559] mb-2">18:00 - Regresso ao Porto</h4>
-                  <p class="text-gray-700">Retorno ao seu hotel/acomodação no Porto</p>
-                </div>
+                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center"><i class="fas fa-eye text-white"></i></div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm"><h4 class="font-bold text-lg text-[#164559] mb-2">16:30 - Miradouros</h4><p class="text-gray-700">Vistas panorâmicas e fotografias</p></div>
+              </div>
+              <div class="relative">
+                <div class="absolute -left-[45px] top-0 w-8 h-8 rounded-full bg-[#164559] flex items-center justify-center"><i class="fas fa-flag-checkered text-white"></i></div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm"><h4 class="font-bold text-lg text-[#164559] mb-2">18:00 - Regresso</h4><p class="text-gray-700">Drop-off no hotel</p></div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="mt-20 bg-gradient-to-br from-[#F8FAFC] to-[#EFF6FF] p-10 rounded-xl shadow-sm border border-gray-100">
-          <h3 class="text-3xl font-bold text-[#164559] playfair mb-8 text-center">
-            Informações do Tour
-          </h3>
+          <h3 class="text-3xl font-bold text-[#164559] playfair mb-8 text-center">Informações do Tour</h3>
           <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h4 class="font-bold text-lg text-[#164559] mb-4 flex items-center">
-                <i class="fas fa-check-circle text-[#B1D4E0] mr-3"></i>
-                Incluído
-              </h4>
+              <h4 class="font-bold text-lg text-[#164559] mb-4 flex items-center"><i class="fas fa-check-circle text-[#B1D4E0] mr-3"></i>Incluído</h4>
               <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Transporte em veículo privado com ar condicionado</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Guia especializado durante todo o tour</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Visitas e provas de vinho nas quintas</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Passeio de barco no rio Douro</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Almoço completo (entrada, prato principal, sobremesa e café)</span>
-                </li>
+                <li class="flex items-start"><i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Transporte privado com ar condicionado</li>
+                <li class="flex items-start"><i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Guia especializado</li>
+                <li class="flex items-start"><i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Visita e prova em caves</li>
+                <li class="flex items-start"><i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Passeio de barco</li>
+                <li class="flex items-start"><i class="fas fa-check text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Almoço típico</li>
               </ul>
             </div>
-
             <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h4 class="font-bold text-lg text-[#164559] mb-4 flex items-center">
-                <i class="fas fa-info-circle text-[#B1D4E0] mr-3"></i>
-                Recomendações
-              </h4>
+              <h4 class="font-bold text-lg text-[#164559] mb-4 flex items-center"><i class="fas fa-info-circle text-[#B1D4E0] mr-3"></i>Recomendações</h4>
               <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-shoe-prints text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Calçado confortável para caminhar nas vinhas</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-sun text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Protetor solar e chapéu nos meses quentes</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-camera text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Câmara para registar as paisagens</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-utensils text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Comunique dietas especiais antecipadamente</span>
-                </li>
+                <li class="flex items-start"><i class="fas fa-shoe-prints text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Calçado confortável</li>
+                <li class="flex items-start"><i class="fas fa-sun text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Protetor solar e chapéu</li>
+                <li class="flex items-start"><i class="fas fa-camera text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Câmara fotográfica</li>
+                <li class="flex items-start"><i class="fas fa-utensils text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Informe restrições alimentares</li>
               </ul>
             </div>
-
             <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h4 class="font-bold text-lg text-[#164559] mb-4 flex items-center">
-                <i class="fas fa-clock text-[#B1D4E0] mr-3"></i>
-                Detalhes
-              </h4>
+              <h4 class="font-bold text-lg text-[#164559] mb-4 flex items-center"><i class="fas fa-clock text-[#B1D4E0] mr-3"></i>Detalhes</h4>
               <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                  <i class="fas fa-calendar-day text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Disponível todo o ano</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-user-friends text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Grupos pequenos (até 8 pessoas)</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-map-marked-alt text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Partida do Porto</span>
-                </li>
-                <li class="flex items-start">
-                  <i class="fas fa-walking text-[#B1D4E0] mr-2 mt-1 text-sm"></i>
-                  <span>Nível de atividade: Moderado</span>
-                </li>
+                <li class="flex items-start"><i class="fas fa-calendar-day text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Disponível todo o ano</li>
+                <li class="flex items-start"><i class="fas fa-user-friends text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Grupos até 8 pessoas</li>
+                <li class="flex items-start"><i class="fas fa-map-marked-alt text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Partida do Porto</li>
+                <li class="flex items-start"><i class="fas fa-walking text-[#B1D4E0] mr-2 mt-1 text-sm"></i>Atividade: Fácil/Moderada</li>
               </ul>
             </div>
           </div>
@@ -556,25 +207,18 @@
       </div>
     </section>
 
-    <!-- Gallery Preview -->
+    <!-- Galeria -->
     <section class="py-16 px-6 md:px-12 bg-gray-50">
       <div class="container mx-auto">
-        <h3 class="text-3xl font-bold text-[#164559] playfair mb-8 text-center">
-          Momentos Memoráveis no Douro
-        </h3>
+        <h3 class="text-3xl font-bold text-[#164559] playfair mb-8 text-center">Momentos no Porto</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <img src="../../images/douro-1.jpg" alt="Douro Landscape" class="rounded-lg shadow object-cover h-48 w-full">
-          <img src="../../images/douro-2.jpg" alt="Wine Tasting" class="rounded-lg shadow object-cover h-48 w-full">
-          <img src="../../images/douro-3.jpg" alt="Vineyards" class="rounded-lg shadow object-cover h-48 w-full">
-          <img src="../../images/douro-4.jpg" alt="Boat Trip" class="rounded-lg shadow object-cover h-48 w-full">
+          <img src="../../../images/porto.jpg" alt="Centro do Porto" class="rounded-lg shadow object-cover h-48 w-full">
+          <img src="../../../images/porto.jpg" alt="Caves de Vinho do Porto" class="rounded-lg shadow object-cover h-48 w-full">
+          <img src="../../../images/porto.jpg" alt="Ribeira do Porto" class="rounded-lg shadow object-cover h-48 w-full">
+          <img src="../../../images/porto.jpg" alt="Passeio de barco no Douro" class="rounded-lg shadow object-cover h-48 w-full">
         </div>
         <div class="text-center mt-8">
-          <a 
-            href="../galery/galery-pt.html" 
-            class="px-6 py-2 border border-[#164559] text-[#164559] hover:bg-[#164559] hover:text-white rounded-full transition inline-block"
-          >
-            Ver Mais Fotos
-          </a>
+          <a href="../../galery/galery-pt.html" class="px-6 py-2 border border-[#164559] text-[#164559] hover:bg-[#164559] hover:text-white rounded-full transition inline-block">Ver Mais Fotos</a>
         </div>
       </div>
     </section>
@@ -582,20 +226,11 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-6 md:px-12">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           <div class="mb-8 md:mb-0">
             <h3 class="text-xl font-bold playfair mb-4">
               <div class="flex items-center">
-                <span class="text-[#164559]">
-                  <img
-                    src="../../images/Screenshot_2025-06-09_183744-removebg-preview.png"
-                    alt="logo"
-                    id="logo-menu"
-                    class="logotipo"
-                  />
-                </span>
+                <span class="text-[#164559]"><img src="../../../images/Screenshot_2025-06-09_183744-removebg-preview.png" alt="logo" class="logotipo" /></span>
                 <div class="flex flex-col items-start ml-3">
                   <span class="nome-emp text-white">Roteiros&Dicas</span>
                   <div class="divider-horizontal bg-white"></div>
@@ -603,106 +238,40 @@
                 </div>
               </div>
             </h3>
-            <p class="text-gray-400 mb-4">
-              Tours privados e personalizados em Portugal com guia
-              especializado.
-            </p>
+            <p class="text-gray-400 mb-4">Tours privados e personalizados em Portugal com guia especializado.</p>
             <div class="flex space-x-4">
-              <a href="#" class="text-gray-400 hover:text-white transition">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="text-gray-400 hover:text-white transition">
-                <i class="fab fa-instagram"></i>
-              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
 
           <div>
             <h4 class="text-lg font-bold mb-4 playfair">Links Rápidos</h4>
             <ul class="space-y-2">
-              <li>
-                <a href="../../index-pt.html" class="text-gray-400 hover:text-white transition"
-                  >Início</a
-                >
-              </li>
-              <li>
-                <a href="../tours/tours-pt.html" class="text-gray-400 hover:text-white transition"
-                  >Tours</a
-                >
-              </li>
-              <li>
-                <a href="../galery/galery-pt.html" class="text-gray-400 hover:text-white transition"
-                  >Galeria</a
-                >
-              </li>
-              <li>
-                <a href="../sobre-nos/aboutus-pt.html" class="text-gray-400 hover:text-white transition"
-                  >Sobre Nós</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-400 hover:text-white transition"
-                  >Contacto</a
-                >
-              </li>
+              <li><a href="../../../index-pt.html" class="text-gray-400 hover:text-white transition">Início</a></li>
+              <li><a href="../../tours/tours-pt.html" class="text-gray-400 hover:text-white transition">Tours</a></li>
+              <li><a href="../../galery/galery-pt.html" class="text-gray-400 hover:text-white transition">Galeria</a></li>
+              <li><a href="../../sobre-nos/aboutus-pt.html" class="text-gray-400 hover:text-white transition">Sobre Nós</a></li>
+              <li><a href="../../contactos/contact-pt.html" class="text-gray-400 hover:text-white transition">Contacto</a></li>
             </ul>
           </div>
 
           <div>
             <h4 class="text-lg font-bold mb-4 playfair">Tours</h4>
             <ul class="space-y-2">
-              <li>
-                <a href="../tours/douro-pt.html" class="text-gray-400 hover:text-white transition"
-                  >Douro - Tour em Destaque</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Guimarães e Braga</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Fátima e Aveiro</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Porto</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-400 hover:text-white transition"
-                  >Tour Personalizado</a
-                >
-              </li>
+              <li><a href="./douro.html" class="text-gray-400 hover:text-white transition">Douro</a></li>
+              <li><a href="./guimaraes-braga.html" class="text-gray-400 hover:text-white transition">Guimarães & Braga</a></li>
+              <li><a href="./fatima-aveiro.html" class="text-gray-400 hover:text-white transition">Fátima & Aveiro</a></li>
+              <li><a href="./porto.html" class="text-gray-400 hover:text-white transition">Porto</a></li>
+              <li><a href="./personalizado.html" class="text-gray-400 hover:text-white transition">Personalizado</a></li>
             </ul>
           </div>
 
           <div>
             <h4 class="text-lg font-bold mb-4 playfair">Contacto</h4>
             <ul class="space-y-4">
-              <li class="flex items-center">
-                <i class="fas fa-phone text-[#B1D4E0] mr-3"></i>
-                <a
-                  href="https://wa.me/351913885853"
-                  target="_blank"
-                  class="text-gray-400 hover:text-white transition"
-                >
-                  +351 913 885 853
-                </a>
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-envelope text-[#B1D4E0] mr-3"></i>
-                <a
-                  href="mailto:roteirosedicas.tours@gmail.com"
-                  class="text-gray-400 hover:text-white transition"
-                >
-                  roteirosedicas.tours@gmail.com
-                </a>
-              </li>
+              <li class="flex items-center"><i class="fas fa-phone text-[#B1D4E0] mr-3"></i><a href="https://wa.me/351913885853" target="_blank" class="text-gray-400 hover:text-white transition">+351 913 885 853</a></li>
+              <li class="flex items-center"><i class="fas fa-envelope text-[#B1D4E0] mr-3"></i><a href="mailto:roteirosedicas.tours@gmail.com" class="text-gray-400 hover:text-white transition">roteirosedicas.tours@gmail.com</a></li>
             </ul>
             <div class="mt-4 text-gray-500 text-sm">
               <p>RENAAT Nº337 / 2025</p>
@@ -710,137 +279,63 @@
             </div>
           </div>
         </div>
-
-        <div
-          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500"
-        >
-          <p>&copy; 2023 Roteiros&Dicas. Todos os direitos reservados.</p>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+          <p>&copy; 2025 Roteiros&Dicas. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
 
     <script>
-      /**
-       * DOM Elements
-       */
       const mobileMenuButton = document.getElementById("mobile-menu-button");
       const mobileMenu = document.getElementById("mobile-menu");
       const closeMenuButton = document.getElementById("close-menu");
       const navbar = document.querySelector(".navbar");
-
-      /**
-       * Initialize all event listeners
-       */
       function initEventListeners() {
-        // Mobile menu toggle
         mobileMenuButton.addEventListener("click", toggleMobileMenu);
         closeMenuButton.addEventListener("click", closeMobileMenu);
-
-        // Navbar scroll effect
         window.addEventListener("scroll", handleNavbarScroll);
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener("click", handleSmoothScroll);
         });
       }
-
-      /**
-       * Toggle mobile menu visibility
-       */
       function toggleMobileMenu() {
         const menuBackdrop = document.getElementById("menu-backdrop");
         mobileMenu.classList.remove("translate-x-full");
         menuBackdrop.classList.remove("hidden");
         document.body.style.overflow = "hidden";
       }
-
-      /**
-       * Close mobile menu
-       */
       function closeMobileMenu() {
         const menuBackdrop = document.getElementById("menu-backdrop");
         mobileMenu.classList.add("translate-x-full");
         menuBackdrop.classList.add("hidden");
         document.body.style.overflow = "";
       }
-
-      // Close menu when clicking backdrop
-      document
-        .getElementById("menu-backdrop")
-        .addEventListener("click", closeMobileMenu);
-
-      /**
-       * Handle navbar scroll effect
-       */
+      document.getElementById("menu-backdrop").addEventListener("click", closeMobileMenu);
       function handleNavbarScroll() {
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
+        if (window.scrollY > 50) navbar.classList.add("scrolled");
+        else navbar.classList.remove("scrolled");
       }
-
-      /**
-       * Handle smooth scrolling for anchor links
-       * @param {Event} e - Click event
-       */
       function handleSmoothScroll(e) {
         e.preventDefault();
-
         const targetId = this.getAttribute("href");
         if (targetId === "#") return;
-
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: "smooth",
-          });
-
-          // Close mobile menu if open
-          if (!mobileMenu.classList.contains("hidden")) {
-            closeMobileMenu();
-          }
+          window.scrollTo({top: targetElement.offsetTop - 80, behavior: "smooth"});
+          if (!mobileMenu.classList.contains("hidden")) closeMobileMenu();
         }
       }
-
-      // Language switching functionality
-      document.querySelectorAll("[data-lang]").forEach((link) => {
+      document.querySelectorAll("[data-lang]").forEach(link => {
         link.addEventListener("click", function (e) {
           const lang = this.getAttribute("data-lang");
-
-          // Only prevent default for non-href links
-          if (this.getAttribute("href") === "#") {
-            e.preventDefault();
-          }
-
-          if (this.classList.contains("selected-language")) {
-            return; // Already selected
-          }
-
-          // Update selected language indicator
-          document.querySelectorAll(".selected-language span").forEach((el) => {
-            el.textContent = lang.toUpperCase();
-          });
-
-          // Get the page name (index)
-          const currentPage = window.location.pathname
-            .split("/")
-            .pop()
-            .replace(/\.html$/, "");
+          if (this.getAttribute("href") === "#") e.preventDefault();
+          if (this.classList.contains("selected-language")) return;
+          document.querySelectorAll(".selected-language span").forEach(el => {el.textContent = lang.toUpperCase();});
+          const currentPage = window.location.pathname.split("/").pop().replace(/\.html$/, "");
           const baseName = currentPage.split("-")[0];
-
-          // If it's a link without href (mobile menu), construct the URL
-          if (this.getAttribute("href") === "#") {
-            window.location.href = `${baseName}-${lang}.html`;
-          }
-
-          // Otherwise, the href attribute will handle the navigation
+          if (this.getAttribute("href") === "#") window.location.href = `${baseName}-${lang}.html`;
         });
       });
-
-      // Initialize all event listeners when DOM is loaded
       document.addEventListener("DOMContentLoaded", initEventListeners);
     </script>
   </body>
