@@ -1,5 +1,5 @@
 git add .
-git commit -m "correções de erros, melhorias de desempenho, SEO, acessibilidade e responsividade"
+git commit -m "Update Details EN, PT and FR"
 git push
 
 <div class="flex items-center">
