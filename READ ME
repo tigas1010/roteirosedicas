@@ -1,5 +1,5 @@
 git add .
-git commit -m "Corrigir hrefs"
+git commit -m "Configurar todos os hrefs PT's"
 git push
 
 <div class="flex items-center">
@@ -14,3 +14,7 @@ git push
           </div>
         </a>
       </div>
+
+href="mailto:roteirosedicas.tours@gmail.com?subject=Solicitação de Tour&body=Olá!%0AGostaria de solicitar informações sobre os tours disponíveis.%0ATenho interesse em conhecer alguns destinos e gostaria de saber mais sobre opções, datas e valores.%0ASe possível, envie-me o catálogo ou sugestões de roteiros.%0AObrigado!"
+https://www.instagram.com/roteirosedicas.tours/
+https://www.facebook.com/profile.php?id=61581190495830&sk=followers&locale=pt_PT
